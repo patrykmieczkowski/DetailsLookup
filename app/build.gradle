@@ -22,6 +22,8 @@ android {
     }
 }
 
+def roomVersion = '1.1.0-beta1'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
@@ -30,4 +32,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation "android.arch.persistence.room:runtime:$roomVersion"
+    kapt "android.arch.persistence.room:compiler:$roomVersion"
+
+    // if app uses Java 8 - using this library instead of android.arch.lifecycle:compiler
+    implementation "android.arch.lifecycle:common-java8:1.1.1"
+
 }
