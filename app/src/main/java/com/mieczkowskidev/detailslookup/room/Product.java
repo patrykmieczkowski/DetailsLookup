@@ -20,6 +20,11 @@ public class Product {
     @ColumnInfo(name = "image_url")
     private String imageUrl;
 
+    public Product(String name, String imageUrl) {
+        this.name = name;
+        this.imageUrl = imageUrl;
+    }
+
     public int getUid() {
         return uid;
     }

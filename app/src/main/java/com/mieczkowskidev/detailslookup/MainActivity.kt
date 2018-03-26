@@ -1,9 +1,12 @@
 package com.mieczkowskidev.detailslookup
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.mieczkowskidev.detailslookup.room.RoomActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +19,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Log.d(TAG, "onCreate()")
+
+        setListeners()
+    }
+
+    private fun setListeners() {
+
+        main_button_room.setOnClickListener {
+
+            val intent = Intent(this, RoomActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {
