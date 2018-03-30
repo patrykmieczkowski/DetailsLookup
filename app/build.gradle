@@ -24,6 +24,7 @@ android {
 }
 
 def roomVersion = '1.1.0-beta1'
+def daggerVersion = '2.12'
 def rxJavaVersion = '2.1.11'
 def rxKotlinVersion = '2.2.0'
 def rxBindingVersion = '2.1.1'
@@ -46,6 +47,10 @@ dependencies {
 
     // if app uses Java 8 - using this library instead of android.arch.lifecycle:compiler
     implementation "android.arch.lifecycle:common-java8:1.1.1"
+
+    // Dagger dependencies
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
     // RxJava dependencies
     implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"

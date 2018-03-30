@@ -1,4 +1,4 @@
-package com.mieczkowskidev.detailslookup;
+package com.mieczkowskidev.detailslookup.app;
 
 import android.app.Application;
 
