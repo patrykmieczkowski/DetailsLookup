@@ -23,6 +23,7 @@ class RoomActivity : AppCompatActivity() {
         productList.add(Product("rower", "http rower png"))
         productList.add(Product("hustawka", "http hustawka jpg"))
         productList.add(Product("samochod", "http samochod gif"))
+        productList.add(Product("dom", "domek obraz"))
 
         saveDataToRoom(productList)
     }
