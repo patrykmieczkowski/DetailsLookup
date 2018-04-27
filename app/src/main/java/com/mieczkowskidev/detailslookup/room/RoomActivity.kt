@@ -25,6 +25,7 @@ class RoomActivity : AppCompatActivity() {
         productList.add(Product("samochod", "http samochod gif"))
         productList.add(Product("blok", "blokowisko jpg"))
         productList.add(Product("dom", "domek obraz"))
+        productList.add(Product("miasto", "miasto.png"))
         productList.add(Product("drewno", "las lesnik obraz"))
 
         saveDataToRoom(productList)
