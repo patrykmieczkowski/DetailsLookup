@@ -2,6 +2,7 @@ package com.mieczkowskidev.detailslookup.constraint
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.mieczkowskidev.detailslookup.R
 
 class ConstraintExample : AppCompatActivity() {
 
