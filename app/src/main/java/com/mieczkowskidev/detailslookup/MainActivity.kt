@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.mieczkowskidev.detailslookup.constraint.ConstraintExample
+import com.mieczkowskidev.detailslookup.custom_alert_dialog.CustomDialogActivity
 import com.mieczkowskidev.detailslookup.room.RoomActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -36,6 +37,12 @@ class MainActivity : AppCompatActivity() {
         main_button_room.setOnClickListener {
 
             val intent = Intent(this, ConstraintExample::class.java)
+            startActivity(intent)
+        }
+
+        main_button_alert_dialog.setOnClickListener {
+
+            val intent = Intent(this, CustomDialogActivity::class.java)
             startActivity(intent)
         }
     }

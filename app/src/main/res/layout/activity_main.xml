@@ -20,4 +20,11 @@
         android:layout_below="@id/main_button_room"
         android:text="Constraint"/>
 
+    <Button
+        android:id="@+id/main_button_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_button_constraint"
+        android:text="Alert Dialog"/>
+
 </RelativeLayout>
