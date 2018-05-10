@@ -7,9 +7,7 @@ import android.app.Fragment
 /**
  * Created by Patryk Mieczkowski on 06.05.2018
  */
-/*
- * Notes Dialog
- */
+
 inline fun Activity.showNotesAlertDialog(func: NotesDialogHelper.() -> Unit): AlertDialog =
         NotesDialogHelper(this).apply {
             func()
