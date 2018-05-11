@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.mieczkowskidev.detailslookup.R
+import com.mieczkowskidev.detailslookup.showDLog
 import kotlinx.android.synthetic.main.activity_custom_dialog.*
 
 class CustomDialogActivity : AppCompatActivity() {
@@ -24,11 +25,11 @@ class CustomDialogActivity : AppCompatActivity() {
                 cancelable = false
 
                 closeIconClickListener {
-                    // "Notes Dialog close icon clicked"
+                    showDLog("Close")
                 }
 
                 doneIconClickListener {
-                    // "Notes Dialog done icon clicked"
+                    showDLog("Done")
                 }
             }
         //  and showing
