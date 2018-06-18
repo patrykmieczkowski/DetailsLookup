@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.widget.Toast
 import com.mieczkowskidev.detailslookup.constraint.ConstraintExample
 import com.mieczkowskidev.detailslookup.custom_alert_dialog.CustomDialogActivity
 import com.mieczkowskidev.detailslookup.room.RoomActivity
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, CustomDialogActivity::class.java)
             startActivity(intent)
+        }
+
+        main_button_additional.setOnClickListener {
+            Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
         }
     }
 
