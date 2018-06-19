@@ -32,6 +32,10 @@ def rxAndroidVersion = '2.0.2'
 def retrofitVersion = '2.4.0'
 def okHttpVersion = '3.10.0'
 
+def paging_version = "1.0.0"
+def kotlinxCoroutinesVersion = "0.22.5"
+def ktxVersion = '0.3'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
@@ -45,8 +49,13 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$roomVersion"
     kapt "android.arch.persistence.room:compiler:$roomVersion"
 
+
     // if app uses Java 8 - using this library instead of android.arch.lifecycle:compiler
     implementation "android.arch.lifecycle:common-java8:1.1.1"
+
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation "android.arch.paging:runtime:$paging_version"
+    implementation "android.arch.paging:rxjava2:1.0.0-rc1"
 
     // Dagger dependencies
     implementation "com.google.dagger:dagger:$daggerVersion"
