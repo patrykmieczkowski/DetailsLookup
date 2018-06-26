@@ -27,5 +27,7 @@ class SWActivity : AppCompatActivity() {
         val service = retrofit.create(SwAPI::class.java)
 
 
+        val getPeople = service.getPeople(1)
+
     }
 }
